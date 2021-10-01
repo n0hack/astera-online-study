@@ -1,2 +1,1 @@
-console.log('hi');
-console.log('hi2);
+// 오늘은 여기까지
