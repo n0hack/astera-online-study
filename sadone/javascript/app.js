@@ -1,3 +1,3 @@
-//출력 함수
-console.log('hello world');
 
+let username = 'NoHack'
+console.log('My name is' + username)
