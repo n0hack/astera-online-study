@@ -10,33 +10,12 @@
 
 function, var, let, const에 대해 일어나는 호이스팅 현상들
 
-# 문제3. 다음 코드의 결과는 어떤 것이 나올까?
-
-```javascript
-let num = 123;
-
-function foo() {
-  console.log(num);
-}
-
-function bar() {
-  let num = 1000;
-  console.log(num);
-  foo();
-}
-
-foo();
-bar();
-```
-
-직접 코딩해 보고, 결과를 보면서 자바스크립트는 렉시컬 스코프를 따르고 있는 것을 복습하기
-
-# 문제4. 함수형 프로그래밍이란 무엇인가?
+# 문제3. 함수형 프로그래밍이란 무엇인가?
 
 - 순수함수, 일급객체(함수)를 포함하여 설명하기
 - 어떤 장점이 있는지 설명하기
 
-# 문제5. 팩토리얼을 구하는 함수를 재귀(Recursive)로 구현하기
+# 문제4. 팩토리얼을 구하는 함수를 재귀(Recursive)로 구현하기
 
 - input: 5 --> factorial(5);
 - output:
