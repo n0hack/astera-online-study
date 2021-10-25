@@ -145,7 +145,6 @@ solve(5);
 solve(7);
 */
 // =============================================================
-
 /**
  * [LEVEL 6] LEVEL5에서 가로 반전 된 직각삼각형 만들기
  *
@@ -180,7 +179,25 @@ function solve(f) {
 solve(5);
 */
 // =============================================================
-
+// [ Refactor: LEVEL 6]
+// function solve(f) {
+//   let lane = ''; // 초기값은 아무것도 없음, 줄을 나타낼 변수
+//   for (let i = 1; i <= f; i++) {
+//     for (let j = i; j <= f - 1; j++) {
+//       // ⭐️못 찾고 있었던 부분 j=1 -> j=i
+//       lane = lane + ' ';
+//     }
+//     for (let k = 1; k <= i; k++) {
+//       lane = lane + '*'; // i의 수에 해당하는 만큼 별 갯수 찍어주기
+//     }
+//     lane = lane; // 별 갯수 찍었으니 한칸 띄어주기
+//     if (i < f) {
+//       lane += '\n';
+//     }
+//   }
+//   console.log(lane); // for문 밖에서 console.log해서 다시 lane값 초기화
+// }
+// solve(5);
 /**
  * [LEVEL 7] 피라미드 만들기
  *
@@ -217,7 +234,25 @@ function solve(f) {
 }
 
 solve(5);
-// =============================================================
+*/
+
+// [ Refactor: LEVEL 7 ]
+// function solve(f) {
+//   let lane = '';
+//   for (let i = 1; i <= f; i++) {
+//     for (let k = 1; k <= f - i; k++) {
+//       lane = lane + ' ';
+//     }
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//       lane = lane + '*';
+//     }
+//     lane = lane + '\n';
+//   }
+//   // console.log는 기본적으로 개행을 하니까, 이렇게 처리해봐도 될 듯
+//   process.stdout.write(lane);
+// }
+
+// solve(5);
 
 /**
  * [LEVEL 8] 마름모 만들기
@@ -225,15 +260,15 @@ solve(5);
  * < input > N은 1이상의 홀수
  *   5
  * < output >
- *     *    
- *    ***   
- *   *****  
- *    ***   
- *     *    
+ *     *
+ *    ***
+ *   *****
+ *    ***
+ *     *
  *
  * n 3 5 7 9 11
  * f 3 5 7 9 11
- * 
+ *
  * n i
  * n-2(i-1)
  *   결과는 5층까지만 나오는 게 아닌, input 값에 따라서 삼각형의 형태가 달라져야 합니다.
@@ -241,22 +276,24 @@ solve(5);
 
 // Math.floor <<<<<
 
-function solve(n) {
-    let lane = '';
-    for (let i = 1; i <= n; i++) {
-      for (let j = i; j < Math.abs(Math.floor(n / 2) - i); j++) {
-        // 조건을 걸어서 n의 절반을 지났으면, 증감식을 -든 +든 반전시켜 계산할 듯
-        lane = lane + ' ';
-      }
-      for (let k = 1; k <= i; k++) {
-        lane = lane + '*';
-      }
-      console.log(lane);
-    }
-  }
-  
-  solve(5);
-  
-  console.log(Math.abs(Math.floor(5 / 2) - 3));
-  
-  
+// function solve(n) {
+//   let lane = '';
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = i; j < Math.abs(Math.floor(n / 2) - i); j++) {
+//       // 조건을 걸어서 n의 절반을 지났으면, 증감식을 -든 +든 반전시켜 계산할 듯
+//       lane = lane + ' ';
+//     }
+//     for (let k = 1; k <= i; k++) {
+//       lane = lane + '*';
+//     }
+//     console.log(lane);
+//   }
+// }
+
+// solve(5);
+
+// console.log(Math.abs(Math.floor(5 / 2) - 3));
+
+// 1. 인덱스가 반까지 왔다면~~ 케이스로 나누는 방법
+// 2. 제가 야매로 했던 그런 방식도 있으니
+// 3. 구글링
