@@ -33,9 +33,15 @@
 
 ## Our Convention
 
+커밋 메시지 작성 시 아래 규칙을 따라 주세요! 👏
+
+- 문제 해결 => solve: 21.10.01 Assignment (resolve #1)
+- 코드 수정 => refactor: 팩토리얼 (21.10.01 Assignment)
+- 단순 파일 추가 => add: 21.10.01 Live Coding Files
+
 ## License
 
-### 함께 공부할 내용
+MIT &copy; NoHack
 
 <!-- References -->
 
