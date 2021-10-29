@@ -29,9 +29,9 @@
 | :-----: | :----: | :-----------: | :-----------: | :------: | :-----: |
 | ![html] | ![css] | ![javascript] | ![typescript] | ![react] | ![node] |
 
-<br><br>
+<br>
 
-## Our Convention
+# Our Convention
 
 커밋 메시지 작성 시 아래 규칙을 따라 주세요! 👏
 
@@ -39,7 +39,9 @@
 - 코드 수정 => refactor: 팩토리얼 (21.10.01 Assignment)
 - 단순 파일 추가 => add: 21.10.01 Live Coding Files
 
-## License
+<br>
+
+# License
 
 MIT &copy; NoHack
 
