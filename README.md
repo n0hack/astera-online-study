@@ -31,7 +31,7 @@
 
 <br>
 
-# Our Convention
+## Our Convention
 
 커밋 메시지 작성 시 아래 규칙을 따라 주세요! 👏
 
@@ -41,7 +41,7 @@
 
 <br>
 
-# License
+## License
 
 MIT &copy; NoHack
 
