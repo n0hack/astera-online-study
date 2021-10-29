@@ -51,7 +51,9 @@ solve: 21.10.01 Assignment (resolve #1)
 
 ```
 update: 팩토리얼 (21.10.01 Assignment)
+
 or
+
 refactor: 팩토리얼 (21.10.01 Assignment)
 ```
 
