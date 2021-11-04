@@ -47,45 +47,50 @@
 // 첫 번째 줄에 손익분기점 즉 최초로 이익이 발생하는 판매량을 출력한다. 손익분기점이 존재하지 않으면 -1을 출력한다.
 // 11
 
-function bep(a, b, c) {
-  // a = 고정, b = 가변,
-  if (b >= c) {
-    console.log(-1);
-  } else {
-    console.log(a / (c - b) + 1);
-    // let sell = 1;
-    // // 한 번 설명 가능 한가용?
-    // for (let i = 1; a + b * i >= c * i; i++) {
-    //   sell = sell + 1;
-    // }
-    // console.log(sell);
+// function bep(a, b, c) {
+//     // a = 고정, b = 가변,
+//     if (b >= c) {
+//       console.log(-1);
+//     } else {
+//       console.log(a / (c - b) + 1);
+//       // let sell = 1;
+//       // // 한 번 설명 가능 한가용?
+//       // for (let i = 1; a + b * i >= c * i; i++) {
+//       //   sell = sell + 1;
+//       // }
+//       // console.log(sell);
+//     }
+//   }
+  
+//   bep(1000, 70, 170);
+  
+  // Q. 재귀함수
+  // 재귀함수로 power 기능 만들기
+  // input => power(2, 3) / output => 8
+  // 2^3 ㅇㅋ?
+  // 시간이 8시이므로, 이거는 과제로 드리겠습니다
+  
+  // js로 미분하는 함수 만들기
+  
+  // HTML + CSS 프로젝트 결과물 1개 = kokoaClone (유료) D-11 html, css 떼는게 1주 + clone codding 1주 << 유료라서
+  // CSS: Box-Sizing(Margin, Padding, Width, Height, Border) / Display (Flex, Block, Inline) / Position (Absolute, Relative, Static, Fixed) / Animation / Transform / 가상 클래스 (:) / 가상 요소 선택자 (::)
+  // 자바스크립트까지 더한 결과물 1개 = Momentum (Chrome Extension : Todo list) Challenge D-18 html, css fund //
+  // ReactJS로 영화 웹 서비스 만들기 << 무료 (리액트 맛보기 한 번 해보시면 좋을 듯)
+  //
+  // D-11 D-18 2weeks
+  
+  // 프로젝트 할 때 : HTML, CSS, JS 모르면 리액트 절대 못 씁니다 (프론트엔드 기본이에요)
+  
+  function power(b, n) {
+    if (n < 1){
+        return 1;
+    }else{
+        return b * power(b, n-1);
+    }
   }
+  
+console.log(power(2, 3));
+
+function sam(a,b){
+  return a+b;
 }
-
-bep(1000, 70, 170);
-
-// Q. 재귀함수
-// 재귀함수로 power 기능 만들기
-// input => power(2, 3) / output => 8
-// 2^3 ㅇㅋ?
-// 시간이 8시이므로, 이거는 과제로 드리겠습니다
-
-// js로 미분하는 함수 만들기
-
-// HTML + CSS 프로젝트 결과물 1개 = kokoaClone (유료) D-11 html, css 떼는게 1주 + clone codding 1주 << 유료라서
-// CSS: Box-Sizing(Margin, Padding, Width, Height, Border) / Display (Flex, Block, Inline) / Position (Absolute, Relative, Static, Fixed) / Animation / Transform / 가상 클래스 (:) / 가상 요소 선택자 (::)
-// 자바스크립트까지 더한 결과물 1개 = Momentum (Chrome Extension : Todo list) Challenge D-18 html, css fund //
-// ReactJS로 영화 웹 서비스 만들기 << 무료 (리액트 맛보기 한 번 해보시면 좋을 듯)
-//
-// D-11 D-18 2weeks
-
-// 프로젝트 할 때 : HTML, CSS, JS 모르면 리액트 절대 못 씁니다 (프론트엔드 기본이에요)
-
-function power(b, n) {
-  if (n < 1) return 1;
-  return b * power(b, n - 1);
-}
-
-console.log(power(3, 4));
-console.log(power(2, 16));
-console.log(power(2, 31));
