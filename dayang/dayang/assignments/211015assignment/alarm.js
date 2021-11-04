@@ -1,6 +1,6 @@
 
 function alarm(h,m){
-        if(m - 45 > 0){ //조건 1 : minute - 45 가 0보다 클 때
+        if(m - 45 >= 0){ //조건 1 : minute - 45 가 0보다 클 때
             console.log(`${h} : ${m-45}`)
         }else{
             if(h !== 0){ //조건 2 : hour가 0이 아닐 때
@@ -14,3 +14,5 @@ function alarm(h,m){
     alarm(10, 10)
     alarm(0, 30)
     alarm(23, 40)
+    alarm(0, 0)
+    alarm(1, 44)
