@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      // 1차원 배열
+      const array = [1, 2, 3, 4, 5];
+      // 2차원 배열
+      const matrix = Array.from({ length: 5 }, (_, i) =>
+        Array.from({ length: 5 }, (_, j) => i * 5 + (j + 1))
+      );
+
+      // 반복문을 통한 참조
+      // length 프로퍼티
+
+      // 자주 사용하는 배열 메소드
+      // 1. push : 맨 뒤에 요소를 추가
+      // 2. pop : 맨 뒤의 요소를 제거하면서 반환
+      // 3. shift : 맨 앞의 요소를 제거하면서 반환
+      // 4. unshift : 배열 요소를 전부 뒤로 밀면서, 맨 앞에 요소 추가
+
+      // 원본 데이터가 바꼈습니다. (부수효과)
+      // 이걸 억제하기 위해서 함수형 프로그래밍을 하는 거고,
+      console.log(array);
+      const newArray = array.map((v) => v * v);
+      console.log(newArray);
+
+      // Stack 에서 쓰이는 용어
+    </script>
+  </head>
+  <body></body>
+</html>
