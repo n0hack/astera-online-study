@@ -67,7 +67,7 @@ add: 21.10.01 Live Coding Files
 
 ## License
 
-MIT &copy; NoHack
+MIT &copy; [NoHack](mailto:https://lbjp114@gmail.com)
 
 <!-- References -->
 
