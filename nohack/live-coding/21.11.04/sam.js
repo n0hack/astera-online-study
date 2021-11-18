@@ -121,8 +121,16 @@
 function bubbleSort(arr){
 	/* 배열은 객체 타입이므로 내부에서 수정하면 원본에 영향이 갑니다. */
 	for(let i = 0; i < arr.length - 1; i++){
+		let value;
 		for(let j = 0; j < arr.length - 1 - i; j++){
-				
+			if(arr[j]>arr[j+1]){
+				value = arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=value;
+			}
         }
-		}
 	}
+	return arr;
+}
+
+console.log(bubbleSort([1,3,5,2,4]));

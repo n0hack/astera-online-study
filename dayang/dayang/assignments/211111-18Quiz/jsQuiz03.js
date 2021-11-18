@@ -12,23 +12,18 @@ obj2.name = 'sadone'; // 이렇게 수정하면 obj1.name도 함께 변경됨.
 
 console.log(obj1); // {name: 'sadone', age: 28}
 
-// name: nohack과 age: 28 속성을 동일하게 가졌지만, 와~안전 새로운 obj2를 만들고 싶다~!!!
+// name: nohack과 age: 28 속성을 동일하게 가졌지만, 완전 새로운 obj2를 만들고 싶다!
 
-// ...(spread) 연산자를 사용해보자.
+// ...(spread) 연산자 사용.
 
 let yuigahama = {name: 'yui', age: 19};
 let yukinoshita = {...yuigahama};
 
 yukinoshita.name = 'yukino';
-yukinoshita.age = '18';
+yukinoshita.age = 18;
 
 console.log(yuigahama); // {name: 'yui', age, 19} 
 // 서로 다른 주소를 가지게 됐기 때문에 값이 안바뀜!
 
-// 그런데... 이 방법으론 딱 1 depth 까지만 가능하다고 한다. 2 depth 부턴 다시 얕은 복사를 한다는데...
-// 완벽한 깊은 복사를 하기 위해선 어떻게 해야할까?
-// 여러가지 방법이 있다는데
-// 1. 재귀적으로 깊은 복사를 수행
-// 2. Lodash의 cloneDeep 함수? 사용하기
-// 3. JSON.parse() & JSON.stringify()함수 사용하기
-// 등이 있다고함. 이는 추후 나중에 공부 해보도록 하고 이만 크롬코딩챌린지 하러감.
+
+
