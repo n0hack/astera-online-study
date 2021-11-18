@@ -15,8 +15,6 @@
 
 ---
 
-<br>
-
 ### [스터디 계획](#)
 
 - 기간: 2021.10.01 ~ Endless
@@ -29,11 +27,7 @@
 
 > 스터디에 사용된 자료는 [티스토리 블로그](https://nohack.tistory.com)에 업로드됩니다.
 
-<br>
-
 ---
-
-<br>
 
 ### [우리가 공부하는 기술](#)
 
@@ -44,8 +38,6 @@
 <br>
 
 ## Our Convention
-
-<br>
 
 커밋 메시지 작성 시 아래 규칙을 따라 주세요! 👏
 
@@ -76,8 +68,6 @@ add: 21.10.01 Live Coding Files
 <br>
 
 ## License
-
-<br>
 
 MIT &copy; [NoHack](mailto:https://lbjp114@gmail.com)
 
