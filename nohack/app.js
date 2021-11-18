@@ -10,5 +10,5 @@ function another(A, B, C) {
   console.log(d);
 }
 
-another(5, 8, 4);
-another(1, 2, 3);
+another(5, 8, 5);
+another(2, 4, 6);
