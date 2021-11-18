@@ -11,3 +11,4 @@ function another(A, B, C) {
 }
 
 another(5, 8, 4);
+another(1, 2, 3);
