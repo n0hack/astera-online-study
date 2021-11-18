@@ -13,13 +13,12 @@ Markup : Mark(≒Tag) : ex) <head>,<body>,<p>,<img>,<span>...etc 를 'up(≒pres
 To sum it up, HTML : Hypertext를 표현하기 위해 Mark를 사용해 up하는 language
 
 //markdown : 간단, 간편 표현
-//markup ⊃ markdown *github readme
+//markup ⊃ markdown \*github readme
 
 2. HTML, CSS를 포함한 프론트엔드 영역은 뛰어난 도큐먼트(Document)가 존재합니다. 그 중 대표적인 곳은 어디이고, 검색할 때 어떤 식으로 검색하면 좋을까요?
 
 MDN Web Docs - (舊. Mozilla Developer Network)
 검색 시 : <검색어> + mdn
-
 
 3. HTML의 기본 구조를 간단히 채워 주세요. (태그 2개)
 
@@ -44,12 +43,13 @@ meta데이터는 '데이터에 대한 데이터' + '근데 그 데이터가 어�
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 이러이러한 다양한 것들이 있는데, 간단히 말해 이 html 문서(=파일, 데이터)에 수반되는 metadata를 정의해주는 것이다.
 charset은 문서 인코딩에 사용하는 수단을 보여주는 metadata이고,
 name은 metadata의 이름을, 그리고 content는 그 이름 아래에 있는 metadata의 내용물을 표현한다!
 
 그러니까, metadata 중, 페이지 내용을 utf-8로 인코딩하라는 metadata를 남기려면,
+
 <meta charset="UTF-8">
 와 같이 작성하면 된다.
 
@@ -158,7 +158,6 @@ Class : 1 Class for n tags
 대체로 전역적으로 비슷한 style을 정의할 때는 class를 사용하고,
 각각의 세부적인 style을 정의해줄 때 ID를 사용한다.
 
-
 - 모든 곳에 ID를 사용해 동일한 style을 Copy&Paste 하는 것은 시간적으도, code의 길이로도 낭비가 될 수 있는데,
   이것을 동일한 style을 갖는 class 하나로 지정, 하나의 class를 여러 군데에 부여하면 효율적인 code를 작성할 수 있다.
 
@@ -178,13 +177,12 @@ PPT "DOM"
    이 속성을 변경하는 방법과 어떤 값들이 있는지 최소 세 가지 설명하고, 각각 어떻게 동작하는지 설명하세요.
 
 relative : 상대적 - 태그의 위치를 변경하는 것으로, top/right/bottom/left 속성을 사용해 위치를 조절한다
-            각각의 방향을 static(기본값) 기준으로 '상대적' 위치를 변경하는 것!
+각각의 방향을 static(기본값) 기준으로 '상대적' 위치를 변경하는 것!
 
 absolute : 절대적 - 태그의 위치를 변경하는 것은 같으나, 상위 태그에 static을 포함하지 않는(relative, absolute, fixed를 포함한) 조상을 기준으로 움직인다.
-            다시 말해, 상위 태그 안에서 '절대적'인 위치를 정해서 움직이는 것. 만약 상위 태그가 따로 없다면 body가 기준!
+다시 말해, 상위 태그 안에서 '절대적'인 위치를 정해서 움직이는 것. 만약 상위 태그가 따로 없다면 body가 기준!
 
 fixed : 고정된 - 항상 '어딘가'에 fixed content를 만들 때 사용됩니다
-
 
 3. CSS는 Box 개념이 정말 중요한데요. 요소의 외부 간격, 내부 여백을 의미하는 두 속성은 무엇일까요?
 
@@ -213,16 +211,35 @@ display: inline-block
 6. 다음의 div는 블럭 요소이기 때문에 각 요소마다 한 줄을 차지합니다. 이 블럭들의 사이즈를 각각 20px \* n으로 하고, (가로)일렬로 만든 다음, 무지개처럼 색상도 입혀보세요.
 
 ```html
-
-    <div id="box1" style="width: 20px; height: 20px; background-color: red; display :inline-block;"></div>
-    <div id="box2" style="width: 40px; height: 40px; background-color: orange; display :inline-block;"></div>
-    <div id="box3" style="width: 60px; height: 60px; background-color: yellow; display :inline-block;"></div>
-    <div id="box4" style="width: 80px; height: 80px; background-color: green; display :inline-block;"></div>
-    <div id="box5" style="width: 100px; height: 100px; background-color: blue; display :inline-block;"></div>
-    <div id="box6" style="width: 120px; height: 120px; background-color: indigo; display :inline-block;"></div>
-    <div id="box7" style="width: 140px; height: 140px; background-color: violet; display :inline-block;"></div>
+<div
+  id="box1"
+  style="width: 20px; height: 20px; background-color: red; display :inline-block;"
+></div>
+<div
+  id="box2"
+  style="width: 40px; height: 40px; background-color: orange; display :inline-block;"
+></div>
+<div
+  id="box3"
+  style="width: 60px; height: 60px; background-color: yellow; display :inline-block;"
+></div>
+<div
+  id="box4"
+  style="width: 80px; height: 80px; background-color: green; display :inline-block;"
+></div>
+<div
+  id="box5"
+  style="width: 100px; height: 100px; background-color: blue; display :inline-block;"
+></div>
+<div
+  id="box6"
+  style="width: 120px; height: 120px; background-color: indigo; display :inline-block;"
+></div>
+<div
+  id="box7"
+  style="width: 140px; height: 140px; background-color: violet; display :inline-block;"
+></div>
 ```
-
 
 7. display 속성 중 flex는 정말 중요하고, 많이 사용합니다.
    다음 사이트(Flexbox Froggy)는 flex를 연습할 수 있는 곳인데, 끝까지 클리어한 다음 인증을 캡처해 남겨 주세요.
@@ -250,36 +267,35 @@ class Person {}
 
 ```jsx
 class person {
-    constructor(name,age) {
-        this.name = name;
-        this.age = age;
-    }
-    move() {
-        console.log(`${this.name} call move`)
-    }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  move() {
+    console.log(`${this.name} call move`);
+  }
 
-    say () {
-        console.log(`${this.name} call say`)
-    }
+  say() {
+    console.log(`${this.name} call say`);
+  }
 }
-const person1 = new person('person1', '15');
-const person2 = new person('person2', '18');
+const person1 = new person("person1", "15");
+const person2 = new person("person2", "18");
 
 class Teacher extends person {
-    constructor(name, age, job) {
-        super(name,age);
-        this.job = job;
-    }
-    teach () {
-        console.log(`${this.name} call teach`)
-    }
+  constructor(name, age, job) {
+    super(name, age);
+    this.job = job;
+  }
+  teach() {
+    console.log(`${this.name} call teach`);
+  }
 }
-const teacher = new Teacher('teacher', '30', 'otaku')
+const teacher = new Teacher("teacher", "30", "otaku");
 
 teacher.teach();
 teacher.say();
 ```
-
 
 2. ★자바스크립트에서 함수를 정의하는 방법(new Function, eval, arrow, literal 등)은 많습니다.
    저는 개인적으로 간편하기 때문에 화살표 함수를 선호합니다.
@@ -307,27 +323,25 @@ dog.greeting2();
 
 this : this.xx 에서 xx(object)는 항상 '무엇이다!' 하고 정해지는게 아니라는 사실
 몰?루 그러면 어떻게 결정되나요?
-함수가 호출되는 '방식' 에 따라서 뒤의 object가 결정된다
+함수가 호출되는 '방식' 에 따라서 뒤의 this 바인딩이 결정된다
 개념부터 말하면,
-1) 일반 함수 호출 방식 -> this는 포함되어 있는 범위(스코프?) 내에서 정의해준 xx를 가리킨다
-2) 화살표 함수 호출 방식 -> this는 언제나 '상위 스코프'의 this를 가리키고 반드시 얘로 정해진다
+
+1. 일반 함수 호출 방식 -> this는 포함되어 있는 범위(스코프?) 내에서 정의해준 xx를 가리킨다
+2. 화살표 함수 호출 방식 -> this는 언제나 '상위 스코프'의 this를 가리키고 반드시 얘로 정해진다
 
 그러니까, 위의 예문으로 설명하려들면,
 greeting2 함수는 일반적인 함수 호출 방식으로 정의되어, const dog 내에서 정의해주었던 name:'흰둥이'로 정해져 this.name이 '흰둥이'가 되고
 greeting 함수는 화살표 함수 호출 방식으로 정의되어, 더욱 상위, 여기서는 '전역 스코프'에서 정의해준 this.name = '검둥이'를 받아와 '검둥이'가 되는 것!
 
-
-
-
 3. ★원시 타입의 값은 그대로 다른 변수에 복사를 하면, 값 자체를 복사하는 것이므로 서로 독립적인 값을 갖게 됩니다.
-하지만 객체 타입은 주소를 복사하는 것이므로, 다음 코드처럼 작성하면 서로 같은 것을 가리키게 됩니다. 이를 얕은 복사(Shallow Copy)라고 하는데,
-서로 독립적으로 만드는 깊은 복사(Deep Copy)를 하려면 어떻게 해야 할까요?
+   하지만 객체 타입은 주소를 복사하는 것이므로, 다음 코드처럼 작성하면 서로 같은 것을 가리키게 됩니다. 이를 얕은 복사(Shallow Copy)라고 하는데,
+   서로 독립적으로 만드는 깊은 복사(Deep Copy)를 하려면 어떻게 해야 할까요?
 
 ```jsx
-let obj1 = { name: 'nohack', age: 28 };
+let obj1 = { name: "nohack", age: 28 };
 let obj2 = obj1;
 
-obj2.name = 'sadone';  // 이렇게 수정하면 obj1.name도 함께 변경된다.
+obj2.name = "sadone"; // 이렇게 수정하면 obj1.name도 함께 변경된다.
 
 // name: nohack과 age:28 속성을 동일하게 가졌지만, 완전 새로운 obj2를 만들고 싶다.
 ```
@@ -335,19 +349,18 @@ obj2.name = 'sadone';  // 이렇게 수정하면 obj1.name도 함께 변경된�
 code와 내용을 주석을 통해 후술합니다.
 
 ```jsx
-let obj1 = { name: 'nohack', age: 28 };
+let obj1 = { name: "nohack", age: 28 };
 let obj2 = obj1;
 
-obj2.name = 'sadone';  // 이렇게 수정하면 obj1.name도 함께 변경된다.
+obj2.name = "sadone"; // 이렇게 수정하면 obj1.name도 함께 변경된다.
 
 // name: nohack과 age:28 속성을 동일하게 가졌지만, 완전 새로운 obj2를 만들고 싶다.
 // 이렇게 복사하는 것이 'shallow copy'
 console.log(obj1); // { name: 'sadone', age: 28};
 
-
 // 그렇다면, 'deep copy'를 하는 방법은?
 
-let obj3 = { name: 'sam', feat: 'hentai'};
+let obj3 = { name: "sam", feat: "hentai" };
 // obj3을 만들었고, 이와 독립적으로 작동하는 obj4를 만들고 싶다. sam이 hentai인 것은 불변의 진리니까
 // 하여튼, obj4의 name이든, feat이든 무엇을 수정하든 간에 obj3을 건드리지 않는 객체를 copy하려면,
 
@@ -356,14 +369,27 @@ let obj4 = Object.assign({}, obj3);
 //그리고 매서드에서 보다시피, 속성을 복사/정의 한다기 보다는 할당(assgin)하는 것에 부합한다.
 //참고2로 출처에 obj3 대신 null이나 undefined가 있어도 예외는 발생하지 않는다
 
-let objex = Object.assign({},null);
+let objex = Object.assign({}, null);
 console.log(objex); // {}
 
-obj4.name = 'yamgool';
-obj4.feat = 'otaku';
+obj4.name = "yamgool";
+obj4.feat = "otaku";
 
 console.log(obj3); // { name: 'sam', feat: 'hentai' }
 console.log(obj4); // { name: 'yamgool', feat: 'otaku' }
 
 //매서드의 힘을 빌려, sam이 hentai임도 그대로 고정된 채, yamgool이 오타쿠인 새 object를 만들 수 있었다.
+```
+
+다만 위의 Object.assign을 사용하는 방법은 추천되지 않아(airbnb style guide 3.8) ... (spread 연산자)를 사용하는 방법이 더욱 선호되는데, 그 방법은 후술한다.
+
+```jsx
+let obj5 = { name: "andhi", job: "developer" };
+let obj6 = { ...obj5, status: "sloth" };
+
+obj6.name = "soa";
+obj6.job = "nogada";
+
+console.log(obj5); // {name: 'andhi', job: 'developer'}
+console.log(obj6); // {name: 'soa', job: 'nogada', status: 'sloth'};
 ```
