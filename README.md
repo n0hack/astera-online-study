@@ -1,6 +1,6 @@
 ![Astera Online Study](./images/intro.jpg)
 
-# What is this?
+# What is this?  
 
 <br>
 
